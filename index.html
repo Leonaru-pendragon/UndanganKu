@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wedding of Erik & Afina</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS External -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- COVER / ENVELOPE -->
+    <div id="cover" class="cover">
+        <div class="cover-content">
+            <h2>The Wedding Of</h2>
+            <h1>Erik & Afina</h1>
+            <p>12 & 13 April 2026</p>
+            <button id="openBtn" class="open-btn">
+                <i class="fas fa-envelope-open"></i> Buka Undangan
+            </button>
+        </div>
+        <div class="cover-decoration">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-heart"></i>
+        </div>
+    </div>
+
+    <!-- Background Pattern -->
+    <div class="bg-pattern"></div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content hidden">
+        
+        <!-- Hero Section (Beranda) -->
+        <header id="beranda" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2 class="hero-subtitle">The Wedding Of</h2>
+                <h1 class="hero-title">Erik & Afina</h1>
+                <p class="hero-date">12 & 13 April 2026</p>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#couple"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </header>
+
+        <!-- Opening Section -->
+        <section id="opening" class="opening reveal">
+            <div class="container">
+                <p class="arabic-text">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</p>
+                <h3 class="section-title">Assalamu'alaikum Wr.Wb</h3>
+                <p class="opening-text">Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan pernikahan putra-putri kami:</p>
+                <br>
+                <div class="quote-box">
+                    <p><i>"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang."</i></p>
+                    <p class="quote-ref">— QS. Ar-Rum: 21</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Couple Section -->
+        <section id="couple" class="couple reveal">
+            <h3 class="section-title">Mempelai</h3>
+            <div class="couple-container">
+                <div class="person">
+                    <div class="photo-frame">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Groom">
+                    </div>
+                    <h3>Erik Alga Lesmana., M.Pd</h3>
+                    <p>Putra dari Bpk. Sakmad & Ibu Dartem</p>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="and-text">&</div>
+                
+                <div class="person">
+                    <div class="photo-frame">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Bride">
+                    </div>
+                    <h3>Afina Naelul Mashidah</h3>
+                    <p>Putri dari Bpk. Alm. Saefudin & Ibu Rokhimah</p>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Section -->
+        <section id="event" class="event reveal">
+            <h3 class="section-title">Acara</h3>
+            
+            <div class="event-card">
+                <div class="event-icon-box">
+                    <i class="fas fa-ring"></i>
+                </div>
+                <h4>Acara</h4>
+                <div class="event-details">
+                    <p><i class="fas fa-map-marker-alt"></i>DK. Igirbatu RT 2/RW 5, Desa Taraban, Kec. Paguyangan, Kab. Brebes</p>
+                    <a href="https://maps.app.goo.gl/nWXdZdRQ4bhZ8AqQ8" class="map-link"><i class="fas fa-location-arrow"></i> Lihat Lokasi</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countdown Section -->
+        <section class="countdown-section reveal">
+            <h3 class="section-title">Menuju Hari Bahagia</h3>
+            <div class="countdown-grid" id="countdown">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <small>Hari</small>
+                </div>
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <small>Jam</small>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <small>Menit</small>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <small>Detik</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- PHOTO GALLERY SECTION -->
+        <section id="gallery" class="gallery reveal">
+            <h3 class="section-title">Galeri Foto</h3>
+            <p class="gallery-text">Momen indah pernikahan kami</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="foto1.jpg" alt="Foto 1">
+                    <div class="gallery-overlay">
+                        <p>Acara Akad</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="foto2.jpg" alt="Foto 2">
+                    <div class="gallery-overlay">
+                        <p>Resepsi</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="foto3.jpg" alt="Foto 3">
+                    <div class="gallery-overlay">
+                        <p>Pre-Wedding</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="foto4.jpg" alt="Foto 4">
+                    <div class="gallery-overlay">
+                        <p>Couple Shot</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="foto5.jpg" alt="Foto 5">
+                    <div class="gallery-overlay">
+                        <p>Family Photo</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="foto6.jpg" alt="Foto 6">
+                    <div class="gallery-overlay">
+                        <p>Ceremony</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOA & UCAPAN SECTION -->
+        <section id="doa" class="doa reveal">
+            <h3 class="section-title">Doa & Ucapan</h3>
+            <p class="doa-text">Tuliskan doa dan ucapan selamat untuk mempelai</p>
+            
+            <form class="doa-form" id="doaForm">
+                <div class="form-group">
+                    <label>Nama Lengkap</label>
+                    <input type="text" id="doaName" placeholder="Masukkan nama Anda" required>
+                </div>
+                <div class="form-group">
+                    <label>Doa & Ucapan</label>
+                    <textarea id="doaMessage" rows="4" placeholder="Tuliskan doa dan ucapan Anda..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Kirim Doa</button>
+            </form>
+
+            <div class="doa-list" id="doaList">
+                <div class="doa-item">
+                    <div class="doa-header">
+                        <div class="doa-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="doa-info">
+                            <h4>Budi Santoso</h4>
+                            <span class="doa-date">20 Desember 2024</span>
+                        </div>
+                    </div>
+                    <p class="doa-content">Semoga pernikahan ini menjadi awal yang indah dan penuh berkah. Aamiin.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DONATION SECTION -->
+        <section id="donation" class="donation reveal">
+            <h3 class="section-title">Kondangan Online</h3>
+            <p class="donation-text">
+                "Sesungguhnya harta dan anak-anak itu adalah perhiasan kehidupan dunia, 
+                tetapi amal yang kekal lagi saleh adalah lebih baik pahalanya di sisi Tuhanmu." 
+                (QS. Al-Kahfi: 46)
+            </p>
+            <p class="donation-subtext">
+                Doa restu Anda merupakan karunia yang sangat berarti bagi kami. 
+                Namun jika Anda ingin memberikan tanda kasih, berikut adalah rekening yang dapat digunakan:
+            </p>
+
+            <div class="bank-list">
+                <div class="bank-card">
+                    <div class="bank-header">
+                        <div class="bank-logo">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="bank-info">
+                            <h4>Bank BCA</h4>
+                            <p>3420345177</p>
+                            <span>a.n Erik Alga Lesmana</span>
+                        </div>
+                    </div>
+                    <button class="copy-btn" onclick="copyToClipboard('3420345177')">
+                        <i class="fas fa-copy"></i> Salin No. Rekening
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-logo">Erik & Afina</div>
+            <p>Terima kasih atas doa dan restu Anda</p>
+            <p>&copy; 2024 Wedding Invitation</p>
+        </footer>
+
+        <!-- Music Control -->
+        <div class="music-control" id="musicBtn">
+            <i class="fas fa-music"></i>
+        </div>
+        
+        <!-- Audio Element -->
+        <audio id="bgMusic" loop>
+            <source src="Jaz - Bersamamu Lyrics.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- FLOATING BOTTOM NAVIGATION -->
+    <nav id="bottom-nav" class="bottom-nav hidden">
+        <a href="#beranda" class="nav-item active" data-target="beranda">
+            <i class="fas fa-home"></i>
+            <span>Beranda</span>
+        </a>
+        <a href="#couple" class="nav-item" data-target="couple">
+            <i class="fas fa-user"></i>
+            <span>Mempelai</span>
+        </a>
+        <a href="#event" class="nav-item" data-target="event">
+            <i class="fas fa-calendar-alt"></i>
+            <span>Acara</span>
+        </a>
+        <a href="#gallery" class="nav-item" data-target="gallery">
+            <i class="fas fa-images"></i>
+            <span>Galeri</span>
+        </a>
+        <a href="#doa" class="nav-item" data-target="doa">
+            <i class="fas fa-envelope"></i>
+            <span>Doa</span>
+        </a>
+    </nav>
+
+    <!-- JavaScript External -->
+    <script src="script.js"></script>
+</body>
+</html>
